@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {%block head%}
+
+<title>YT All-in-one Downloader</title>
+
+{%endblock%} {%block body%}
+
+<div class="container">
+  <div class="card">
+    <!-- Navbar -->
+    <nav class="navbar navbar-white bg-dark">
+      <h3 class="center">The ARK TECH</h3>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#!" id="videoDownloader"
+            >Video Downloader</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!" id="y2audioConverter"
+            >Video To Audio Converter</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!" id="playlistDownloader"
+            >Playlist Downloader</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <div class="card-body">
+      <form action="#">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="https://www.youtube.com/watch?v=LjXxTvhilOM"
+            id="myInputField"
+            name="myInputField"
+          />
+          <div class="input-group-append">
+            <input
+              class="btn btn-success"
+              id="downloadButton"
+              type="submit"
+              value="Download"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="progress"></div>
+
+{%endblock%}
